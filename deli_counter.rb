@@ -9,6 +9,7 @@ def line(array)
     line = ""
     array.each do |name|
       line += " #{counter + 1}. #{name}"
+      counter += 1
     end
     puts "The line is currently:#{line}"
   end
