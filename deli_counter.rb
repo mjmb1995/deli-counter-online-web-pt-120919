@@ -16,7 +16,14 @@ def line(array)
 end
 
 def take_a_number(array, name)
-
   array.push(name)
   puts "Welcome, #{name}. You are number #{array.index(name) + 1} in line."
+end
+
+def now_serving(array)
+  if array.count > 0
+    puts "Currently serving #{array.first}."
+    array.shift
+  else
+    puts "There is nobody waiting to be severed!"
 end
