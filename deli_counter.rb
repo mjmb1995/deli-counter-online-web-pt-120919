@@ -5,7 +5,12 @@ def line
   if katz_deli.size === 0 
     puts "The line is currently empty."
   else
-    
+    counter = 0
+    line = ""
+    katz_deli.each do |name|
+      line += " #{counter + 1}. #{name}"
+    end
+    puts "The line is currently:"
   end
 end
 
